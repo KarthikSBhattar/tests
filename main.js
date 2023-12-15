@@ -279,6 +279,8 @@
 // }
 
 window.onload = function() {
-    let dupScoreCard = document.getElementsByClassName("qc-assessment-summary-card-list")[0].cloneNode(true);
-    document.getElementsByClassName("col-xs-12")[0].appendChild(dupScoreCard);
+    setTimeout(function() {
+        let dupScoreCard = document.getElementsByClassName("qc-assessment-summary-card-list")[0].cloneNode(true);
+        document.getElementsByClassName("col-xs-12")[0].appendChild(dupScoreCard);
+    }, 3000);
 }
