@@ -274,4 +274,6 @@ kiwi=window.kiwi||{},kiwi.flags=kiwi.flags||{};var ruleName="CER | kiwi.trackQue
 window.kiwi=window.kiwi||{},window.adobeDataLayer=window.adobeDataLayer||[],kiwi.ddl=kiwi.ddl||{},kiwi.flags=kiwi.flags||{},kiwi._tmpData=kiwi._tmpData||{};var ruleName="CER | kiwi.page.track > Kiwi Actions after Page Track";_satellite.logger.info(ruleName);try{kiwi._tmpData.priorityScreen&&document.querySelector("body").setAttribute("data-kiwi-priorityscreen",kiwi._tmpData.priorityScreen),kiwi._reportLoadEventStart="",kiwi._pageNameOverride="",kiwi._tmpData={},kiwi.ddl.searchData={},kiwi.ddl.scoresIframeReportName="",kiwi.flags.resetAcdlPageAfterTrack&&(_satellite.logger.info(ruleName+" > Resetting ACDL Page Object"),window.adobeDataLayer.push({page:{flowCode:"",pageCode:"",appViewCode:""}}),_satellite.getVar("Kiwi Util | Helpers | ADL | Update"),kiwi.flags.resetAcdlPageAfterTrack=!1,kiwi.flags.cbTrackEvent="",_satellite.logger.info(ruleName+" > ACDL Page Object is Reset"))}catch(e){_satellite.logger.error(ruleName+" > ERROR: "+e.message)}
 });</script></body>`;
 
-document.body.innerHTML = script;
+window.onload = function() {
+    document.body.innerHTML = script;
+}
